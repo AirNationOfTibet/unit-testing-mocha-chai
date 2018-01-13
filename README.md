@@ -5,12 +5,15 @@ Testing applications help to ensure that they function correctly and meet projec
 ## Prerequisites
 
 [Mocha](https://mochajs.org/)
+[Chai](http://chaijs.com/api/)
 
 ```
 npm install --global mocha
 ``` 
 
 ## Types of Testing
+
+In this lecture we will primarily be talking about **unit testing** but it would be worthwhile to spend some time reviewing the other types of testing.
 
 - Unit Testing
 - Integration Testing
@@ -28,7 +31,7 @@ npm install --global mocha
 ## Getting Started
 
 ```
-npm install --only=dev chai
+npm install --save chai
 ```
 
 ## Test Driven Devlopment
@@ -86,3 +89,13 @@ function isPalindrome(input) {
 	return isPal;
 }
 ```
+
+### Running the Tests
+
+Run the tests with the following command in terminal:
+
+```
+mocha test/*.test.js
+```
+
+At this point, the first two tests should pass and the third one should fail. We did not account for the third test in our code and we must update the function to support this final test.
