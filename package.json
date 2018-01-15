@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/*.test.js --exit",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,10 @@
   },
   "homepage": "https://github.com/PrimeAcademy/deneb-unit-testing#readme",
   "dependencies": {
-    "chai": "^4.1.2"
+    "chai": "^4.1.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "chai-http": "^3.0.0"
   }
 }

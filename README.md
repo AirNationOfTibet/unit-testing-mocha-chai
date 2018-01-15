@@ -4,12 +4,12 @@ Testing applications help to ensure that they function correctly and meet projec
 
 ## Prerequisites
 
-[Mocha](https://mochajs.org/)
-[Chai](http://chaijs.com/api/)
+- [Mocha](https://mochajs.org/)
+- [Chai](http://chaijs.com/api/)
 
 ```
 npm install --global mocha
-``` 
+```
 
 ## Types of Testing
 
@@ -18,6 +18,7 @@ In this lecture we will primarily be talking about **unit testing** but it would
 - Unit Testing
 - Integration Testing
 - Functional Testing
+- Automated UI Testing
 - System Testing
 - Stress Testing
 - Performance Testing
@@ -31,7 +32,7 @@ In this lecture we will primarily be talking about **unit testing** but it would
 ## Getting Started
 
 ```
-npm install --save chai
+npm install --save-dev chai
 ```
 
 ## Test Driven Devlopment
@@ -99,3 +100,10 @@ mocha test/*.test.js
 ```
 
 At this point, the first two tests should pass and the third one should fail. We did not account for the third test in our code and we must update the function to support this final test.
+
+
+## Integration Testing
+
+We will be using [chai-http](http://chaijs.com/plugins/chai-http/) for integration testing.
+
+`npm install chai-http --save-dev`
